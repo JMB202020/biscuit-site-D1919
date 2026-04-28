@@ -1,179 +1,234 @@
 ---
 import '../styles/site.css';
----<!DOCTYPE html>
+---
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automatic Driving Lessons | Iwan Williams Driving School</title>
-  <meta name="description" content="Automatic and manual driving lessons in Swansea, Llanelli and Neath Port Talbot. Male and female instructors available." />
-  
+  <meta name="description" content="Automatic driving lessons in Swansea, Llanelli and Neath Port Talbot. Learn to drive in an automatic car with a fully qualified DVSA-approved instructor." />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
 
-<!-- Preview Banner -->
-<div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Header -->
-<header class="bg-white shadow-sm sticky top-[41px] z-40">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/D1919" class="flex flex-col leading-tight">
-      <span class="font-display font-extrabold text-xl text-brand-accent">Iwan Williams</span>
-      <span class="font-body text-xs text-ink-soft tracking-wide uppercase">Driving School</span>
-    </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-ink">
-      <a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a>
-      <a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Book Now</a>
-      <a href="/D1919/index-php-automatic-driving-lessons" class="text-brand-accent">Automatic Lessons</a>
-      <a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a>
-      <a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a>
-      <a href="/D1919/index-php-book-now" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-brand-accent-deep transition-colors">Book a Lesson</a>
+  <!-- Header -->
+  <header class="sticky top-[41px] z-40 bg-white border-b border-[var(--color-border)] shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/D1919" class="flex flex-col leading-tight">
+        <span class="font-display font-extrabold text-lg text-[var(--color-brand-accent-deep)]">Iwan Williams</span>
+        <span class="text-xs font-semibold text-[var(--color-ink-soft)] tracking-wide uppercase">Driving School</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)] transition-colors">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="text-[var(--color-brand-accent)] border-b-2 border-[var(--color-brand-accent)] pb-0.5">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)] transition-colors">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)] transition-colors">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)] transition-colors">Join the Team</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">01792 870718</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden p-2 text-[var(--color-ink)]" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <button id="menu-btn" class="md:hidden p-2 text-ink" aria-label="Open menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border px-4 py-4 space-y-3 text-sm font-semibold">
-    <a href="/D1919" class="block text-ink hover:text-brand-accent">Home</a>
-    <a href="/D1919/index-php-book-now" class="block text-ink hover:text-brand-accent">Book Now</a>
-    <a href="/D1919/index-php-automatic-driving-lessons" class="block text-brand-accent">Automatic Lessons</a>
-    <a href="/D1919/index-php-driving-instructor-training" class="block text-ink hover:text-brand-accent">Instructor Training</a>
-    <a href="/D1919/index-php-join-the-team" class="block text-ink hover:text-brand-accent">Join the Team</a>
-    <a href="/D1919/index-php-become-a-driving-instructor" class="block text-ink hover:text-brand-accent">Become an Instructor</a>
-    <a href="/D1919/index-php-ts-cs" class="block text-ink hover:text-brand-accent">T's &amp; C's</a>
-  </div>
-</header>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <nav class="flex flex-col gap-3 pt-3 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)]">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="text-[var(--color-brand-accent)]">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)]">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)]">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)]">Join the Team</a>
+        <a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-[var(--color-brand-accent)]">Become an Instructor</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg text-center">Call 01792 870718</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Hero -->
-<section class="bg-brand-accent text-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-6">
-        📍 Hengoed
+  <main>
+
+    <!-- Page hero -->
+    <section class="bg-[var(--color-brand-accent-deep)] text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-5">
+          📍 Swansea, Llanelli &amp; Neath Port Talbot
+        </div>
+        <h1 class="font-display font-extrabold text-white mb-4">Automatic &amp; Manual Driving Lessons</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">Learn to drive in whichever style suits you best. My fully qualified instructors teach both automatic and manual in your local area.</p>
       </div>
-      <h1 class="font-extrabold text-white mb-4">Automatic &amp; Manual Driving Lessons</h1>
-      <p class="text-xl text-white/90 mb-6">Choose the style of driving that works for you. Available across Swansea, Llanelli and Neath Port Talbot.</p>
-      <a href="/D1919/index-php-book-now" class="inline-block bg-white text-brand-accent font-bold px-6 py-3 rounded-full hover:bg-cream transition-colors">Book a Lesson</a>
-    </div>
-    <div class="flex justify-center">
-      <img src="/D1919/images/bestratedbadge-768x685.png" alt="Best Rated Driving School" width="240" height="214" fetchpriority="high" class="drop-shadow-xl" />
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Automatic vs Manual -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Automatic vs Manual</h2>
-    <p class="text-center text-ink-soft mb-10">Both options available. Here's how to choose.</p>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-accent-light border border-border rounded-xl p-8">
-        <div class="text-4xl mb-4">🔄</div>
-        <h3 class="font-extrabold text-ink mb-3">Automatic Lessons</h3>
-        <p class="text-ink-soft mb-4">Automatic cars do the gear-changing for you, so you can focus entirely on the road. Many learners find automatic lessons less stressful and progress more quickly.</p>
-        <ul class="space-y-2 text-sm text-ink-soft">
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> No manual gear changes to worry about</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Great for nervous or anxious drivers</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Often faster to reach test standard</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Automatic licence only (upgrading available)</li>
+    <!-- Lesson types -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Lesson Types</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg">Choose the option that fits your learning style and budget.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-8 hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-4">🚗</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)] mb-3">Automatic Driving Lessons</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed mb-4">Automatic cars are easier to drive because you do not have to worry about changing gears. Many learners find they progress faster in an automatic, making it a popular choice for nervous drivers or those who have struggled with a manual gearbox.</p>
+            <ul class="space-y-2 text-sm text-[var(--color-ink-soft)]">
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> No clutch control to worry about</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Often fewer lessons needed to pass</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Great for anxious or older learners</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Female instructors available</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-8 hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-4">🔧</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)] mb-3">Manual Driving Lessons</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed mb-4">A manual licence lets you drive any car. My instructors are experienced at teaching clutch control, gear changes and smooth driving in and around South Wales roads. Pass in a manual and you are set for life.</p>
+            <ul class="space-y-2 text-sm text-[var(--color-ink-soft)]">
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Full UK driving licence on passing</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Drive any vehicle after passing</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Patient, experienced instructors</li>
+              <li class="flex items-start gap-2"><span class="text-[var(--color-brand-accent)] font-bold">✓</span> Male and female instructors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="bg-[var(--color-cream)] py-20 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-5">Why Choose Iwan Williams?</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 border border-[var(--color-border)]">
+              <span class="text-2xl">🎓</span>
+              <div>
+                <p class="font-semibold text-[var(--color-ink)]">DVSA-Approved Instructors</p>
+                <p class="text-[var(--color-ink-soft)] text-sm">All my instructors hold full DVSA approval. You are in safe, professional hands every lesson.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 border border-[var(--color-border)]">
+              <span class="text-2xl">📱</span>
+              <div>
+                <p class="font-semibold text-[var(--color-ink)]">FREE Text Reminders</p>
+                <p class="text-[var(--color-ink-soft)] text-sm">Never miss a lesson. You will receive a text reminder before every session, plus a receipt afterwards.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 border border-[var(--color-border)]">
+              <span class="text-2xl">🧑‍🤝‍🧑</span>
+              <div>
+                <p class="font-semibold text-[var(--color-ink)]">Male &amp; Female Instructors</p>
+                <p class="text-[var(--color-ink-soft)] text-sm">Choose the instructor you feel most comfortable with. Female instructors are available in specific postcode areas.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 border border-[var(--color-border)]">
+              <span class="text-2xl">🚙</span>
+              <div>
+                <p class="font-semibold text-[var(--color-ink)]">Dual-Control Vehicles</p>
+                <p class="text-[var(--color-ink-soft)] text-sm">All training vehicles are fully roadworthy, taxed, insured and fitted with dual controls for your safety.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <img
+            src="/D1919/images/istockphoto-1174438394-612x612-1.jpg"
+            alt="Driving lesson in South Wales"
+            width="600"
+            height="600"
+            loading="lazy"
+            class="rounded-xl shadow-md w-full object-cover"
+            style="max-height:320px;"
+          />
+          <img
+            src="/D1919/images/bestratedbadge-768x685.png"
+            alt="Best Rated Driving School"
+            width="220"
+            height="196"
+            loading="lazy"
+            class="mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas -->
+    <section class="py-16 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-4">Areas Covered</h2>
+        <p class="text-[var(--color-ink-soft)] mb-8">I cover the following areas for both automatic and manual lessons.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          {["Swansea East", "Swansea West", "Swansea Valley", "Neath", "Neath Valley", "Llanelli", "Neath Port Talbot"].map(area => (
+            <span class="bg-[var(--color-accent-light)] border border-[var(--color-border)] rounded-full px-4 py-2 text-sm font-semibold text-[var(--color-ink)]">{area}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-brand-accent-deep)] py-16 px-6 text-white text-center">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="font-display font-extrabold text-white mb-4">Ready to Book Your Lesson?</h2>
+        <p class="text-white/90 mb-8 text-lg">No payment required to get started. Book online or give me a call.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/D1919/index-php-book-now" class="bg-white text-[var(--color-brand-accent-deep)] font-bold px-8 py-3 rounded-lg hover:bg-[var(--color-accent-light)] transition-colors">Book Online</a>
+          <a href="tel:01792870718" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white/10 transition-colors">01792 870718</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <p class="font-display font-extrabold text-xl mb-1">Iwan Williams Driving School</p>
+        <p class="text-white/70 text-sm mb-4">The premier driving school for Swansea, Llanelli &amp; Neath Port Talbot.</p>
+        <address class="not-italic text-white/70 text-sm space-y-1">
+          <p>4 Hengoed Rd, Hengoed</p>
+          <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
+          <p><a href="tel:01792870718" class="hover:text-white transition-colors">01792 870718</a></p>
+          <p><a href="tel:03300500217" class="hover:text-white transition-colors">03300 500 217</a></p>
+        </address>
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.facebook.com/iwanwilliamsdriving" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Facebook</a>
+          <a href="https://twitter.com/IwanWilliamsSOM" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Twitter</a>
+          <a href="https://youtube.com/@iwandrivingschool" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">YouTube</a>
+          <a href="https://www.tiktok.com/@iwanwilliams6" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Lessons</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-white transition-colors">Automatic Lessons</a></li>
+          <li><a href="/D1919/index-php-book-now" class="hover:text-white transition-colors">Prices &amp; Book Now</a></li>
+          <li><a href="/D1919/index-php-ts-cs" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
         </ul>
       </div>
-      <div class="bg-cream border border-border rounded-xl p-8">
-        <div class="text-4xl mb-4">⚙️</div>
-        <h3 class="font-extrabold text-ink mb-3">Manual Lessons</h3>
-        <p class="text-ink-soft mb-4">A manual licence lets you drive both manual and automatic cars, giving you more flexibility. Manual lessons are the traditional choice and suit many learners.</p>
-        <ul class="space-y-2 text-sm text-ink-soft">
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Full licence covers both manual and automatic</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> More vehicle choice when you pass</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Learn full control of the vehicle</li>
-          <li class="flex items-start gap-2"><span class="text-brand-accent font-bold mt-0.5">✓</span> Often lower running costs in owned vehicles</li>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Instructors</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-white transition-colors">Instructor Training</a></li>
+          <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-white transition-colors">Become an Instructor</a></li>
+          <li><a href="/D1919/index-php-join-the-team" class="hover:text-white transition-colors">Join the Team</a></li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+    <div class="max-w-6xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-xs">
+      &copy; 2025 Iwan Williams Driving School. All rights reserved.
+    </div>
+  </footer>
 
-<!-- Instructor Photo Section -->
-<section class="py-16 bg-brand-bg">
-  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h2 class="font-extrabold text-ink mb-4">My Instructors</h2>
-      <p class="text-ink-soft mb-4">At Iwan Williams Driving School I have both male and female instructors available, so you can choose who you feel most comfortable learning with.</p>
-      <p class="text-ink-soft mb-4">All lessons are one-to-one in dual-controlled vehicles, fully insured for driving tuition. I cover Swansea, Llanelli and Neath Port Talbot.</p>
-      <p class="text-ink-soft mb-6">I also send free text reminders before each lesson, so you'll never forget your slot.</p>
-      <a href="/D1919/index-php-book-now" class="inline-block bg-brand-accent text-white font-bold px-6 py-3 rounded-full hover:bg-brand-accent-deep transition-colors">Book Your First Lesson</a>
-    </div>
-    <div>
-      <img src="/D1919/images/home-male-female-instructors.jpg" alt="Male and Female Driving Instructors" width="1024" height="372" loading="lazy" class="rounded-xl shadow-lg w-full object-cover" />
-    </div>
-  </div>
-</section>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  </script>
 
-<!-- Areas Covered -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Areas Covered</h2>
-    <p class="text-center text-ink-soft mb-10">Serving Swansea, Llanelli and Neath Port Talbot</p>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm font-semibold text-ink">
-      {["Swansea (East)", "Swansea (West)", "Swansea Valley", "Neath", "Neath Valley", "Llanelli", "Neath Port Talbot", "Hengoed"].map((area) => (
-        <div class="bg-accent-light border border-border rounded-lg p-4">📍 {area}</div>
-      ))}
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-16 bg-brand-accent text-white">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-extrabold text-white mb-4">Ready to Book Your Lesson?</h2>
-    <p class="text-white/90 text-lg mb-8">No payment required for your first booking. Just pick a time and I'll be in touch.</p>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="/D1919/index-php-book-now" class="bg-white text-brand-accent font-bold px-8 py-3 rounded-full hover:bg-cream transition-colors">Book a Lesson</a>
-      <a href="tel:03300500217" class="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white/10 transition-colors">Call 03300 500 217</a>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div>
-      <div class="font-display font-extrabold text-xl text-brand-accent mb-2">Iwan Williams</div>
-      <div class="text-white/70 text-sm mb-4">Driving School</div>
-      <address class="not-italic text-white/70 text-sm space-y-1">
-        <p>4 Hengoed Rd, Hengoed</p>
-        <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
-        <p><a href="tel:03300500217" class="hover:text-brand-accent transition-colors">03300 500 217</a></p>
-        <p><a href="tel:01792870718" class="hover:text-brand-accent transition-colors">01792 870718</a></p>
-      </address>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">Navigation</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a></li>
-        <li><a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Prices &amp; Book Now</a></li>
-        <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a></li>
-        <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a></li>
-        <li><a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">More</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-brand-accent transition-colors">Become a Driving Instructor</a></li>
-        <li><a href="/D1919/index-php-ts-cs" class="hover:text-brand-accent transition-colors">T's &amp; C's</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10 py-4 text-center text-xs text-white/40">
-    &copy; 2026 Iwan Williams Driving School. All rights reserved.
-  </div>
-</footer>
-
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-</script>
 </body>
 </html>

@@ -1,186 +1,243 @@
 ---
 import '../styles/site.css';
----<!DOCTYPE html>
+---
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Become a Driving Instructor | Iwan Williams Driving School</title>
-  <meta name="description" content="Want to become a qualified driving instructor? Iwan Williams offers 1-on-1 ADI training in Swansea, Llanelli and Neath Port Talbot with no long-term contracts." />
-  
+  <meta name="description" content="Want to become a driving instructor in South Wales? Find out how to qualify with Iwan Williams Driving School. Pay-as-you-go training, no long-term contracts." />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
 
-<!-- Preview Banner -->
-<div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Header -->
-<header class="bg-white shadow-sm sticky top-[41px] z-40">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/D1919" class="flex flex-col leading-tight">
-      <span class="font-display font-extrabold text-xl text-brand-accent">Iwan Williams</span>
-      <span class="font-body text-xs text-ink-soft tracking-wide uppercase">Driving School</span>
-    </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-ink">
-      <a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a>
-      <a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Book Now</a>
-      <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a>
-      <a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a>
-      <a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a>
-      <a href="/D1919/index-php-book-now" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-brand-accent-deep transition-colors">Book a Lesson</a>
+  <!-- Header -->
+  <header class="sticky top-[41px] z-40 bg-white border-b border-[var(--color-border)] shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/D1919" class="flex flex-col leading-tight">
+        <span class="font-display font-extrabold text-lg text-[var(--color-brand-accent-deep)]">Iwan Williams</span>
+        <span class="text-xs font-semibold text-[var(--color-ink-soft)] tracking-wide uppercase">Driving School</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)] transition-colors">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)] transition-colors">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)] transition-colors">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)] transition-colors">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)] transition-colors">Join the Team</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">01792 870718</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden p-2 text-[var(--color-ink)]" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <button id="menu-btn" class="md:hidden p-2 text-ink" aria-label="Open menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border px-4 py-4 space-y-3 text-sm font-semibold">
-    <a href="/D1919" class="block text-ink hover:text-brand-accent">Home</a>
-    <a href="/D1919/index-php-book-now" class="block text-ink hover:text-brand-accent">Book Now</a>
-    <a href="/D1919/index-php-automatic-driving-lessons" class="block text-ink hover:text-brand-accent">Automatic Lessons</a>
-    <a href="/D1919/index-php-driving-instructor-training" class="block text-ink hover:text-brand-accent">Instructor Training</a>
-    <a href="/D1919/index-php-join-the-team" class="block text-ink hover:text-brand-accent">Join the Team</a>
-    <a href="/D1919/index-php-become-a-driving-instructor" class="block text-brand-accent">Become an Instructor</a>
-    <a href="/D1919/index-php-ts-cs" class="block text-ink hover:text-brand-accent">T's &amp; C's</a>
-  </div>
-</header>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <nav class="flex flex-col gap-3 pt-3 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)]">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)]">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)]">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)]">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)]">Join the Team</a>
+        <a href="/D1919/index-php-become-a-driving-instructor" class="text-[var(--color-brand-accent)]">Become an Instructor</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg text-center">Call 01792 870718</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Hero -->
-<section class="bg-brand-accent text-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-6">
-        📍 Hengoed
-      </div>
-      <h1 class="font-extrabold text-white mb-4">Become a Driving Instructor</h1>
-      <p class="text-xl text-white/90 mb-6">Start a rewarding career on your own terms. I offer dedicated 1-on-1 ADI training in the local area, with no long-term contracts.</p>
-      <div class="flex flex-wrap gap-4">
-        <a href="/D1919/index-php-driving-instructor-training" class="bg-white text-brand-accent font-bold px-6 py-3 rounded-full hover:bg-cream transition-colors">Full Training Info</a>
-        <a href="tel:03300500217" class="border-2 border-white text-white font-bold px-6 py-3 rounded-full hover:bg-white/10 transition-colors">Call 03300 500 217</a>
-      </div>
-    </div>
-    <div>
-      <img src="/D1919/images/red2-1024x235.png" alt="Iwan Williams Driving School" width="1024" height="235" fetchpriority="high" class="rounded-xl shadow-lg w-full" />
-    </div>
-  </div>
-</section>
+  <main>
 
-<!-- Why become an instructor -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Why Become a Driving Instructor?</h2>
-    <p class="text-center text-ink-soft mb-10">A career that gives you freedom, flexibility and a great income.</p>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">🕐</div>
-        <h3 class="font-extrabold text-ink mb-2">Set Your Own Hours</h3>
-        <p class="text-ink-soft text-sm">Work when you want, take holidays when you want. You're the boss.</p>
+    <!-- Page hero -->
+    <section class="bg-[var(--color-brand-accent-deep)] text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-5">
+          🎓 Start Your New Career
+        </div>
+        <h1 class="font-display font-extrabold text-white mb-4">Become a Driving Instructor</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">Teaching driving is a rewarding career that gives you flexibility, independence and a great income. Find out how to get started with Iwan Williams.</p>
       </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">💷</div>
-        <h3 class="font-extrabold text-ink mb-2">Good Earnings</h3>
-        <p class="text-ink-soft text-sm">30 hours at £39 per hour is £1,170 per week gross. Realistic earnings vary — I'll give you an honest picture.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">🎓</div>
-        <h3 class="font-extrabold text-ink mb-2">Rewarding Work</h3>
-        <p class="text-ink-soft text-sm">Help people gain independence. There's real satisfaction in watching someone pass their driving test.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">🤝</div>
-        <h3 class="font-extrabold text-ink mb-2">Full Support</h3>
-        <p class="text-ink-soft text-sm">I support you from vehicle selection to diary management and financial advice — before and after you qualify.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">📄</div>
-        <h3 class="font-extrabold text-ink mb-2">No Contracts</h3>
-        <p class="text-ink-soft text-sm">Pay-as-you-go training. No long-term tie-ins. Walk away if you're not happy (try that with a national school).</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">📍</div>
-        <h3 class="font-extrabold text-ink mb-2">Local Training</h3>
-        <p class="text-ink-soft text-sm">Train in the areas you'll actually be teaching. I know Swansea, Neath and Llanelli inside out.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Steps overview -->
-<section class="py-16 bg-brand-bg">
-  <div class="max-w-4xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">The Three Steps to Qualify</h2>
-    <p class="text-center text-ink-soft mb-10">Here's what the ADI qualification involves at a glance.</p>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="bg-brand-accent text-white font-extrabold text-2xl rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">1</div>
-        <h3 class="font-extrabold text-ink mb-2">Theory &amp; Hazard Perception</h3>
-        <p class="text-ink-soft text-sm">100 multiple choice questions plus hazard perception. Cost: £90.</p>
+    <!-- Why become an instructor -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Why Become a Driving Instructor?</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg max-w-2xl mx-auto">A career as an Approved Driving Instructor (ADI) offers genuine freedom and a fulfilling job helping people achieve a life skill.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6 text-center hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-4">⏰</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Be Your Own Boss</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">Choose your own hours. Work the days and times that suit you and take holidays whenever you like.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6 text-center hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-4">💷</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Good Earnings</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">Working 30 hours a week at £39 an hour generates £1,170 before expenses. You are self-employed, so Tax and National Insurance apply.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6 text-center hover:shadow-md transition-shadow">
+            <div class="text-3xl mb-4">🌟</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Rewarding Work</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">Every pupil that passes is a genuine achievement. Few jobs let you watch someone grow in confidence the way teaching driving does.</p>
+          </div>
+        </div>
       </div>
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="bg-brand-accent text-white font-extrabold text-2xl rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">2</div>
-        <h3 class="font-extrabold text-ink mb-2">Driving Ability Test</h3>
-        <p class="text-ink-soft text-sm">One hour of assessed driving including manoeuvres and independent driving. Cost: £111.</p>
+    </section>
+
+    <!-- The three tests -->
+    <section class="bg-[var(--color-cream)] py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">The Three Parts of the ADI Qualification</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg">To qualify as an Approved Driving Instructor (ADI) you must pass three parts.</p>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-[var(--color-brand-accent)] text-white font-extrabold font-display text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">1</div>
+              <div>
+                <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Part 1 — Theory and Hazard Perception</h3>
+                <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">100 multiple choice questions with an 85% pass mark (minimum 20 out of 25 in each of the 4 question bands). Hazard Perception pass mark is 57 out of 75. Cost: £90.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-[var(--color-brand-accent)] text-white font-extrabold font-display text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">2</div>
+              <div>
+                <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Part 2 — Driving Ability</h3>
+                <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">Drive for 1 hour completing 2 manoeuvres, a controlled stop, independent driving, and 5 vehicle check questions. Maximum 6 driving faults, 0 serious or dangerous faults. Cost: £111.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl border border-[var(--color-border)] p-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-[var(--color-brand-accent)] text-white font-extrabold font-display text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">3</div>
+              <div>
+                <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">Part 3 — Instructional Ability</h3>
+                <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">An examiner sits in the back for 45 minutes watching you teach a real pupil. They assess your ability to explain, correct faults and adapt your coaching style.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="/D1919/index-php-driving-instructor-training" class="inline-block bg-[var(--color-brand-accent)] text-white font-bold px-8 py-3 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">See Full Training Details</a>
+        </div>
       </div>
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="bg-brand-accent text-white font-extrabold text-2xl rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">3</div>
-        <h3 class="font-extrabold text-ink mb-2">Instructional Ability Test</h3>
-        <p class="text-ink-soft text-sm">45 minutes with an examiner watching you teach. This is where your coaching skills are assessed.</p>
+    </section>
+
+    <!-- Why train with me -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-5">Why Train With Me?</h2>
+          <p class="text-[var(--color-ink-soft)] mb-4 leading-relaxed">I offer pay-as-you-go ADI training with no long-term tie-ins. If you are not happy, you can walk away at any time. Try doing that with a national school.</p>
+          <p class="text-[var(--color-ink-soft)] mb-6 leading-relaxed">Whether you choose to go independent or join my franchise afterwards, I will support you every step of the way — from selecting your training vehicle and fitting dual controls to diary management and self-employed financial advice.</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="text-[var(--color-brand-accent)] font-bold mt-0.5">✓</span>
+              <span class="text-[var(--color-ink-soft)] text-sm">Dedicated 1-2-1 coaching sessions</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[var(--color-brand-accent)] font-bold mt-0.5">✓</span>
+              <span class="text-[var(--color-ink-soft)] text-sm">Training in your local area so you know the roads</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[var(--color-brand-accent)] font-bold mt-0.5">✓</span>
+              <span class="text-[var(--color-ink-soft)] text-sm">Pay as you go — no hidden contracts</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[var(--color-brand-accent)] font-bold mt-0.5">✓</span>
+              <span class="text-[var(--color-ink-soft)] text-sm">Full support after qualifying — including franchise option</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="/D1919/images/road-landscape-nature-sky-56832.jpg"
+            alt="South Wales roads — perfect for instructor training"
+            width="1200"
+            height="192"
+            loading="lazy"
+            class="rounded-xl shadow-md w-full object-cover"
+            style="max-height:280px;"
+          />
+          <div class="mt-6 bg-[var(--color-accent-light)] border border-[var(--color-border)] rounded-xl p-6 text-center">
+            <p class="font-display font-bold text-[var(--color-ink)] mb-2">Ready to find out more?</p>
+            <p class="text-[var(--color-ink-soft)] text-sm mb-4">Call me for a free, no-obligation chat about the ADI qualification.</p>
+            <a href="tel:01792870718" class="inline-block bg-[var(--color-brand-accent)] text-white font-bold px-6 py-3 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">01792 870718</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-brand-accent-deep)] py-16 px-6 text-white text-center">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="font-display font-extrabold text-white mb-4">Take the First Step Today</h2>
+        <p class="text-white/90 mb-8 text-lg">Get in touch to discuss training options and find out if a career as a driving instructor is right for you.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/D1919/index-php-driving-instructor-training" class="bg-white text-[var(--color-brand-accent-deep)] font-bold px-8 py-3 rounded-lg hover:bg-[var(--color-accent-light)] transition-colors">View Training Details</a>
+          <a href="tel:01792870718" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white/10 transition-colors">Call 01792 870718</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <p class="font-display font-extrabold text-xl mb-1">Iwan Williams Driving School</p>
+        <p class="text-white/70 text-sm mb-4">The premier driving school for Swansea, Llanelli &amp; Neath Port Talbot.</p>
+        <address class="not-italic text-white/70 text-sm space-y-1">
+          <p>4 Hengoed Rd, Hengoed</p>
+          <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
+          <p><a href="tel:01792870718" class="hover:text-white transition-colors">01792 870718</a></p>
+          <p><a href="tel:03300500217" class="hover:text-white transition-colors">03300 500 217</a></p>
+        </address>
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.facebook.com/iwanwilliamsdriving" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Facebook</a>
+          <a href="https://twitter.com/IwanWilliamsSOM" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Twitter</a>
+          <a href="https://youtube.com/@iwandrivingschool" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">YouTube</a>
+          <a href="https://www.tiktok.com/@iwanwilliams6" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Lessons</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-white transition-colors">Automatic Lessons</a></li>
+          <li><a href="/D1919/index-php-book-now" class="hover:text-white transition-colors">Prices &amp; Book Now</a></li>
+          <li><a href="/D1919/index-php-ts-cs" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Instructors</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-white transition-colors">Instructor Training</a></li>
+          <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-white transition-colors">Become an Instructor</a></li>
+          <li><a href="/D1919/index-php-join-the-team" class="hover:text-white transition-colors">Join the Team</a></li>
+        </ul>
       </div>
     </div>
-    <div class="mt-8 text-center">
-      <a href="/D1919/index-php-driving-instructor-training" class="inline-block bg-brand-accent text-white font-bold px-8 py-3 rounded-full hover:bg-brand-accent-deep transition-colors">See Full Training Details</a>
+    <div class="max-w-6xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-xs">
+      &copy; 2025 Iwan Williams Driving School. All rights reserved.
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- Already qualified? Join team -->
-<section class="py-16 bg-white">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-extrabold text-ink mb-4">Already Qualified?</h2>
-    <p class="text-ink-soft mb-6">If you're already a qualified ADI and looking for a franchise in South Wales, I'd love to hear from you.</p>
-    <a href="/D1919/index-php-join-the-team" class="inline-block bg-brand-accent text-white font-bold px-8 py-3 rounded-full hover:bg-brand-accent-deep transition-colors">View Franchise Opportunities</a>
-  </div>
-</section>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  </script>
 
-<!-- Footer -->
-<footer class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div>
-      <div class="font-display font-extrabold text-xl text-brand-accent mb-2">Iwan Williams</div>
-      <div class="text-white/70 text-sm mb-4">Driving School</div>
-      <address class="not-italic text-white/70 text-sm space-y-1">
-        <p>4 Hengoed Rd, Hengoed</p>
-        <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
-        <p><a href="tel:03300500217" class="hover:text-brand-accent transition-colors">03300 500 217</a></p>
-        <p><a href="tel:01792870718" class="hover:text-brand-accent transition-colors">01792 870718</a></p>
-      </address>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">Navigation</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a></li>
-        <li><a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Prices &amp; Book Now</a></li>
-        <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a></li>
-        <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a></li>
-        <li><a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">More</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-brand-accent transition-colors">Become a Driving Instructor</a></li>
-        <li><a href="/D1919/index-php-ts-cs" class="hover:text-brand-accent transition-colors">T's &amp; C's</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10 py-4 text-center text-xs text-white/40">
-    &copy; 2026 Iwan Williams Driving School. All rights reserved.
-  </div>
-</footer>
-
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-</script>
 </body>
 </html>

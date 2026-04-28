@@ -1,216 +1,224 @@
 ---
 import '../styles/site.css';
----<!DOCTYPE html>
+---
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Driving School Franchise | Iwan Williams Driving School</title>
-  <meta name="description" content="Driving school franchise opportunities available now in Swansea, Neath, Llanelli and Neath Port Talbot. Be your own boss. No long-term tie-in." />
-  
+  <title>Driving School Franchise | Join the Team | Iwan Williams Driving School</title>
+  <meta name="description" content="Franchise opportunities available now for qualified driving instructors in Swansea, Neath, Llanelli and Neath Port Talbot. Be your own boss with local work supplied." />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
 
-<!-- Preview Banner -->
-<div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Header -->
-<header class="bg-white shadow-sm sticky top-[41px] z-40">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/D1919" class="flex flex-col leading-tight">
-      <span class="font-display font-extrabold text-xl text-brand-accent">Iwan Williams</span>
-      <span class="font-body text-xs text-ink-soft tracking-wide uppercase">Driving School</span>
-    </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-ink">
-      <a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a>
-      <a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Book Now</a>
-      <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a>
-      <a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a>
-      <a href="/D1919/index-php-join-the-team" class="text-brand-accent">Join the Team</a>
-      <a href="/D1919/index-php-book-now" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-brand-accent-deep transition-colors">Book a Lesson</a>
+  <!-- Header -->
+  <header class="sticky top-[41px] z-40 bg-white border-b border-[var(--color-border)] shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/D1919" class="flex flex-col leading-tight">
+        <span class="font-display font-extrabold text-lg text-[var(--color-brand-accent-deep)]">Iwan Williams</span>
+        <span class="text-xs font-semibold text-[var(--color-ink-soft)] tracking-wide uppercase">Driving School</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)] transition-colors">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)] transition-colors">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)] transition-colors">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)] transition-colors">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="text-[var(--color-brand-accent)] border-b-2 border-[var(--color-brand-accent)] pb-0.5">Join the Team</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">01792 870718</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden p-2 text-[var(--color-ink)]" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <button id="menu-btn" class="md:hidden p-2 text-ink" aria-label="Open menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border px-4 py-4 space-y-3 text-sm font-semibold">
-    <a href="/D1919" class="block text-ink hover:text-brand-accent">Home</a>
-    <a href="/D1919/index-php-book-now" class="block text-ink hover:text-brand-accent">Book Now</a>
-    <a href="/D1919/index-php-automatic-driving-lessons" class="block text-ink hover:text-brand-accent">Automatic Lessons</a>
-    <a href="/D1919/index-php-driving-instructor-training" class="block text-ink hover:text-brand-accent">Instructor Training</a>
-    <a href="/D1919/index-php-join-the-team" class="block text-brand-accent">Join the Team</a>
-    <a href="/D1919/index-php-become-a-driving-instructor" class="block text-ink hover:text-brand-accent">Become an Instructor</a>
-    <a href="/D1919/index-php-ts-cs" class="block text-ink hover:text-brand-accent">T's &amp; C's</a>
-  </div>
-</header>
-
-<!-- Hero -->
-<section class="bg-brand-accent text-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
-    <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-6">
-      📍 Hengoed
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <nav class="flex flex-col gap-3 pt-3 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)]">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)]">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="hover:text-[var(--color-brand-accent)]">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)]">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="text-[var(--color-brand-accent)]">Join the Team</a>
+        <a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-[var(--color-brand-accent)]">Become an Instructor</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg text-center">Call 01792 870718</a>
+      </nav>
     </div>
-    <h1 class="font-extrabold text-white mb-4">Driving School Franchise Opportunities Available Now!</h1>
-    <p class="text-xl text-white/90 max-w-2xl mb-6">Instructors needed in Swansea (East &amp; West), Swansea Valley, Neath, Neath Valley, Llanelli and Neath Port Talbot.</p>
-    <a href="tel:03300500217" class="inline-block bg-white text-brand-accent font-bold px-6 py-3 rounded-full hover:bg-cream transition-colors">Call to Find Out More</a>
-  </div>
-</section>
+  </header>
 
-<!-- Road image -->
-<div class="w-full overflow-hidden" style="max-height:250px;">
-  <img src="/D1919/images/road-landscape-nature-sky-56832.jpg" alt="Open road" width="1440" height="250" loading="lazy" class="w-full object-cover" style="object-fit:cover;max-height:250px;" />
-</div>
+  <main>
 
-<!-- Why Join -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Why Join the Team?</h2>
-    <p class="text-center text-ink-soft mb-10">Here's what makes the Iwan Williams franchise different.</p>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">🏢</div>
-        <h3 class="font-extrabold text-ink mb-2">Established School</h3>
-        <p class="text-ink-soft text-sm">Established school supplying local work. You'll hit the ground running with pupils ready and waiting in your area.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">📅</div>
-        <h3 class="font-extrabold text-ink mb-2">100% Diary Control</h3>
-        <p class="text-ink-soft text-sm">State of the art diary where you have 100% control. No one tells you when to work. You choose your own hours.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">👑</div>
-        <h3 class="font-extrabold text-ink mb-2">Be Your Own Boss</h3>
-        <p class="text-ink-soft text-sm">Be your own boss! No one will tell you when to work. Take holidays when you want and work the hours you choose.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">📄</div>
-        <h3 class="font-extrabold text-ink mb-2">No Long-Term Tie-In</h3>
-        <p class="text-ink-soft text-sm">No long-term tie-in or small print. Our arrangement is straightforward and fair from day one.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">💷</div>
-        <h3 class="font-extrabold text-ink mb-2">Good Hourly Rate</h3>
-        <p class="text-ink-soft text-sm">No promotions, just a good honest hourly rate. Our franchise fee is less than most other driving schools.</p>
-      </div>
-      <div class="bg-accent-light border border-border rounded-xl p-6">
-        <div class="text-3xl mb-3">📱</div>
-        <h3 class="font-extrabold text-ink mb-2">Easy Income App</h3>
-        <p class="text-ink-soft text-sm">Easy to use app for income and expenses. Put your feet up when you get home — admin sorted.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Areas Needed -->
-<section class="py-16 bg-brand-bg">
-  <div class="max-w-4xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Areas We Need Instructors</h2>
-    <p class="text-center text-ink-soft mb-8">Positions available across South Wales right now.</p>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      {["Swansea (East)", "Swansea (West)", "Swansea Valley", "Neath", "Neath Valley", "Llanelli", "Neath Port Talbot"].map((area) => (
-        <div class="bg-white border border-border rounded-lg p-4 text-center font-semibold text-ink shadow-sm text-sm">
-          🚗 {area}
+    <!-- Page hero -->
+    <section class="bg-[var(--color-brand-accent-deep)] text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-5">
+          🚘 Opportunities Available Now
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+        <h1 class="font-display font-extrabold text-white mb-4">Driving School Franchise Opportunities</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">Instructors needed in Swansea (East &amp; West), Swansea Valley, Neath, Neath Valley, Llanelli and Neath Port Talbot. Join an established school today.</p>
+      </div>
+    </section>
 
-<!-- Team placeholder section -->
-<section class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-extrabold text-ink text-center mb-3">Meet Some of Our Team</h2>
-    <p class="text-center text-ink-soft mb-10">Qualified instructors already working with us across South Wales.</p>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-cream border border-border rounded-xl overflow-hidden shadow-sm">
-        <div class="aspect-square overflow-hidden bg-accent-light">
-          <img src="/D1919/images/placeholder.png" alt="James Smith, Driving Instructor" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+    <!-- Road background strip -->
+    <section class="relative overflow-hidden h-40">
+      <img
+        src="/D1919/images/road-landscape-nature-sky-56832.jpg"
+        alt="Open road in South Wales"
+        width="1440"
+        height="231"
+        loading="lazy"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/70 flex items-center justify-center">
+        <p class="text-white font-display font-extrabold text-xl md:text-2xl text-center px-6">Your patch. Your hours. Your business.</p>
+      </div>
+    </section>
+
+    <!-- Why join -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Why Join the Team?</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg max-w-2xl mx-auto">Here is what you get when you franchise with Iwan Williams Driving School.</p>
         </div>
-        <div class="p-4 text-center">
-          <h3 class="font-extrabold text-ink">James Smith</h3>
-          <p class="text-ink-soft text-sm">Driving Instructor</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            { icon: "🏢", title: "Established School", body: "I supply local pupils from an established school with a proven reputation in South Wales. You will not be starting from zero." },
+            { icon: "📅", title: "State of the Art Diary", body: "You have 100% control of your diary through our state-of-the-art system. Work the hours that suit you — no one will tell you when to work." },
+            { icon: "👑", title: "Be Your Own Boss", body: "Take holidays whenever you choose. Set your own hours. No one looking over your shoulder." },
+            { icon: "📝", title: "No Long-Term Tie-in", body: "No small print, no surprise clauses. You are free to leave if you ever decide to move on — unlike most national schools." },
+            { icon: "💷", title: "A Good Hourly Rate", body: "No promotions gimmicks — just a straightforward, competitive hourly rate. What you earn is clear from the start." },
+            { icon: "📱", title: "Easy Admin App", body: "Track your income and expenses using our easy app. Put your feet up when you get home — the hard work is done for you." }
+          ].map(item => (
+            <div class="bg-white rounded-xl border border-[var(--color-border)] p-6 hover:shadow-md transition-shadow">
+              <div class="text-3xl mb-3">{item.icon}</div>
+              <h3 class="font-display font-bold text-[var(--color-ink)] mb-2">{item.title}</h3>
+              <p class="text-[var(--color-ink-soft)] text-sm leading-relaxed">{item.body}</p>
+            </div>
+          ))}
         </div>
       </div>
-      <div class="bg-cream border border-border rounded-xl overflow-hidden shadow-sm">
-        <div class="aspect-square overflow-hidden bg-accent-light">
-          <img src="/D1919/images/istockphoto-1174438394-612x612-1.jpg" alt="Stuart O'Brien, Driving Instructor" width="400" height="400" loading="lazy" class="w-full h-full object-cover" />
+    </section>
+
+    <!-- Areas available -->
+    <section class="bg-[var(--color-cream)] py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Areas Where Instructors Are Needed</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg">We currently need instructors in the following areas.</p>
         </div>
-        <div class="p-4 text-center">
-          <h3 class="font-extrabold text-ink">Stuart O'Brien</h3>
-          <p class="text-ink-soft text-sm">Driving Instructor</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+          {["Swansea East", "Swansea West", "Swansea Valley", "Neath", "Neath Valley", "Llanelli", "Neath Port Talbot", "Hengoed"].map(area => (
+            <div class="bg-[var(--color-brand-accent)] text-white rounded-lg px-4 py-4 text-center font-semibold text-sm">
+              {area}
+            </div>
+          ))}
+        </div>
+        <p class="text-center text-[var(--color-ink-soft)] text-sm">Not on the list? Get in touch anyway — availability changes frequently and we may be able to accommodate you.</p>
+      </div>
+    </section>
+
+    <!-- Team instructors - solid colour avatars (no broken placeholder images) -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Our Current Instructors</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg">A growing team of professionals delivering lessons across South Wales.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-24 h-24 rounded-full bg-[var(--color-brand-accent)] text-white font-display font-extrabold text-3xl flex items-center justify-center mx-auto mb-4">JS</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)]">James Smith</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm">Driving Instructor</p>
+          </div>
+          <div class="text-center">
+            <div class="w-24 h-24 rounded-full bg-[var(--color-brand-accent-deep)] text-white font-display font-extrabold text-3xl flex items-center justify-center mx-auto mb-4">SO</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)]">Stuart O'Brien</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm">Driving Instructor</p>
+          </div>
+          <div class="text-center">
+            <div class="w-24 h-24 rounded-full bg-[var(--color-ink-soft)] text-white font-display font-extrabold text-3xl flex items-center justify-center mx-auto mb-4">EJ</div>
+            <h3 class="font-display font-bold text-[var(--color-ink)]">Emma Jones</h3>
+            <p class="text-[var(--color-ink-soft)] text-sm">Driving Instructor</p>
+          </div>
         </div>
       </div>
-      <div class="bg-cream border border-border rounded-xl overflow-hidden shadow-sm">
-        <div class="aspect-square overflow-hidden bg-accent-light flex items-center justify-center">
-          <span class="text-6xl">🚘</span>
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="font-extrabold text-ink">Your Spot?</h3>
-          <p class="text-ink-soft text-sm">We're actively looking for instructors</p>
+    </section>
+
+    <!-- Not yet qualified? -->
+    <section class="bg-[var(--color-accent-light)] border border-[var(--color-border)] rounded-2xl mx-6 mb-20 p-10 max-w-4xl md:mx-auto">
+      <div class="text-center">
+        <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-4">Not Yet Started Your Journey?</h2>
+        <p class="text-[var(--color-ink-soft)] mb-6 leading-relaxed">Not yet qualified as a driving instructor? Find out how to become one with our dedicated ADI training programme. Pay as you go, 1-2-1 sessions in your local area.</p>
+        <a href="/D1919/index-php-driving-instructor-training" class="inline-block bg-[var(--color-brand-accent)] text-white font-bold px-8 py-3 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">Find Out How to Qualify</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-brand-accent-deep)] py-16 px-6 text-white text-center">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="font-display font-extrabold text-white mb-4">Ready to Join the Team?</h2>
+        <p class="text-white/90 mb-8 text-lg">Get in touch today for a no-obligation conversation about how a franchise with Iwan Williams could work for you.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="tel:01792870718" class="bg-white text-[var(--color-brand-accent-deep)] font-bold px-8 py-3 rounded-lg hover:bg-[var(--color-accent-light)] transition-colors">Call 01792 870718</a>
+          <a href="tel:03300500217" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white/10 transition-colors">03300 500 217</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Not Yet Qualified? -->
-<section class="py-12 bg-brand-bg">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-extrabold text-ink mb-4">Not Yet Started on Your Journey?</h2>
-    <p class="text-ink-soft mb-6">Find out how to become a driving instructor. I offer dedicated 1-on-1 training with no long-term tie-ins.</p>
-    <a href="/D1919/index-php-driving-instructor-training" class="inline-block bg-brand-accent text-white font-bold px-6 py-3 rounded-full hover:bg-brand-accent-deep transition-colors">Find Out About Training</a>
-  </div>
-</section>
+  </main>
 
-<!-- CTA -->
-<section class="py-16 bg-brand-accent text-white">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-extrabold text-white mb-4">Interested in Joining the Team?</h2>
-    <p class="text-white/90 text-lg mb-8">Give me a call and I'll tell you everything you need to know. No obligation.</p>
-    <a href="tel:03300500217" class="inline-block bg-white text-brand-accent font-bold px-8 py-3 rounded-full hover:bg-cream transition-colors">Call 03300 500 217</a>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <p class="font-display font-extrabold text-xl mb-1">Iwan Williams Driving School</p>
+        <p class="text-white/70 text-sm mb-4">The premier driving school for Swansea, Llanelli &amp; Neath Port Talbot.</p>
+        <address class="not-italic text-white/70 text-sm space-y-1">
+          <p>4 Hengoed Rd, Hengoed</p>
+          <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
+          <p><a href="tel:01792870718" class="hover:text-white transition-colors">01792 870718</a></p>
+          <p><a href="tel:03300500217" class="hover:text-white transition-colors">03300 500 217</a></p>
+        </address>
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.facebook.com/iwanwilliamsdriving" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Facebook</a>
+          <a href="https://twitter.com/IwanWilliamsSOM" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Twitter</a>
+          <a href="https://youtube.com/@iwandrivingschool" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">YouTube</a>
+          <a href="https://www.tiktok.com/@iwanwilliams6" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Lessons</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-white transition-colors">Automatic Lessons</a></li>
+          <li><a href="/D1919/index-php-book-now" class="hover:text-white transition-colors">Prices &amp; Book Now</a></li>
+          <li><a href="/D1919/index-php-ts-cs" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Instructors</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-white transition-colors">Instructor Training</a></li>
+          <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-white transition-colors">Become an Instructor</a></li>
+          <li><a href="/D1919/index-php-join-the-team" class="hover:text-white transition-colors">Join the Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-xs">
+      &copy; 2025 Iwan Williams Driving School. All rights reserved.
+    </div>
+  </footer>
 
-<!-- Footer -->
-<footer class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div>
-      <div class="font-display font-extrabold text-xl text-brand-accent mb-2">Iwan Williams</div>
-      <div class="text-white/70 text-sm mb-4">Driving School</div>
-      <address class="not-italic text-white/70 text-sm space-y-1">
-        <p>4 Hengoed Rd, Hengoed</p>
-        <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
-        <p><a href="tel:03300500217" class="hover:text-brand-accent transition-colors">03300 500 217</a></p>
-        <p><a href="tel:01792870718" class="hover:text-brand-accent transition-colors">01792 870718</a></p>
-      </address>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">Navigation</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a></li>
-        <li><a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Prices &amp; Book Now</a></li>
-        <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a></li>
-        <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a></li>
-        <li><a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">More</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-brand-accent transition-colors">Become a Driving Instructor</a></li>
-        <li><a href="/D1919/index-php-ts-cs" class="hover:text-brand-accent transition-colors">T's &amp; C's</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10 py-4 text-center text-xs text-white/40">
-    &copy; 2026 Iwan Williams Driving School. All rights reserved.
-  </div>
-</footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  </script>
 
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-</script>
 </body>
 </html>

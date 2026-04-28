@@ -1,161 +1,231 @@
 ---
 import '../styles/site.css';
----<!DOCTYPE html>
+---
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prices &amp; Book Now | Iwan Williams Driving School</title>
-  <meta name="description" content="Book your first driving lesson online. No payment required upfront. Iwan Williams Driving School, Swansea, Llanelli and Neath Port Talbot." />
-  
+  <meta name="description" content="Book your first driving lesson with Iwan Williams Driving School. No payment required to get started. Online booking available 24/7." />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
 
-<!-- Preview Banner -->
-<div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Iwan Williams Driving School</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1919&amp;name=Iwan%20Williams%20Driving%20School" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Header -->
-<header class="bg-white shadow-sm sticky top-[41px] z-40">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/D1919" class="flex flex-col leading-tight">
-      <span class="font-display font-extrabold text-xl text-brand-accent">Iwan Williams</span>
-      <span class="font-body text-xs text-ink-soft tracking-wide uppercase">Driving School</span>
-    </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-ink">
-      <a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a>
-      <a href="/D1919/index-php-book-now" class="text-brand-accent">Book Now</a>
-      <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a>
-      <a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a>
-      <a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a>
-      <a href="/D1919/index-php-book-now" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-brand-accent-deep transition-colors">Book a Lesson</a>
+  <!-- Header -->
+  <header class="sticky top-[41px] z-40 bg-white border-b border-[var(--color-border)] shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="/D1919" class="flex flex-col leading-tight">
+        <span class="font-display font-extrabold text-lg text-[var(--color-brand-accent-deep)]">Iwan Williams</span>
+        <span class="text-xs font-semibold text-[var(--color-ink-soft)] tracking-wide uppercase">Driving School</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)] transition-colors">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)] transition-colors">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="text-[var(--color-brand-accent)] border-b-2 border-[var(--color-brand-accent)] pb-0.5">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)] transition-colors">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)] transition-colors">Join the Team</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">01792 870718</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="menu-toggle" class="md:hidden p-2 text-[var(--color-ink)]" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <button id="menu-btn" class="md:hidden p-2 text-ink" aria-label="Open menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border px-4 py-4 space-y-3 text-sm font-semibold">
-    <a href="/D1919" class="block text-ink hover:text-brand-accent">Home</a>
-    <a href="/D1919/index-php-book-now" class="block text-brand-accent">Book Now</a>
-    <a href="/D1919/index-php-automatic-driving-lessons" class="block text-ink hover:text-brand-accent">Automatic Lessons</a>
-    <a href="/D1919/index-php-driving-instructor-training" class="block text-ink hover:text-brand-accent">Instructor Training</a>
-    <a href="/D1919/index-php-join-the-team" class="block text-ink hover:text-brand-accent">Join the Team</a>
-    <a href="/D1919/index-php-become-a-driving-instructor" class="block text-ink hover:text-brand-accent">Become an Instructor</a>
-    <a href="/D1919/index-php-ts-cs" class="block text-ink hover:text-brand-accent">T's &amp; C's</a>
-  </div>
-</header>
-
-<!-- Hero -->
-<section class="bg-brand-accent text-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
-    <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-6">
-      📍 Hengoed
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[var(--color-border)] px-4 pb-4">
+      <nav class="flex flex-col gap-3 pt-3 text-sm font-semibold text-[var(--color-ink)]">
+        <a href="/D1919" class="hover:text-[var(--color-brand-accent)]">Home</a>
+        <a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-[var(--color-brand-accent)]">Lessons</a>
+        <a href="/D1919/index-php-book-now" class="text-[var(--color-brand-accent)]">Book Now</a>
+        <a href="/D1919/index-php-driving-instructor-training" class="hover:text-[var(--color-brand-accent)]">Instructor Training</a>
+        <a href="/D1919/index-php-join-the-team" class="hover:text-[var(--color-brand-accent)]">Join the Team</a>
+        <a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-[var(--color-brand-accent)]">Become an Instructor</a>
+        <a href="tel:01792870718" class="bg-[var(--color-brand-accent)] text-white px-4 py-2 rounded-lg text-center">Call 01792 870718</a>
+      </nav>
     </div>
-    <h1 class="font-extrabold text-white mb-4">Prices &amp; Book Now</h1>
-    <p class="text-xl text-white/90 max-w-2xl">Actually book your first driving lesson here. No payment required upfront. Subsequent lessons and payments are arranged directly with your instructor.</p>
-  </div>
-</section>
+  </header>
 
-<!-- Red2 banner -->
-<section class="bg-white py-8">
-  <div class="max-w-4xl mx-auto px-4">
-    <img src="/D1919/images/red2-1024x235.png" alt="Iwan Williams Driving School" width="1024" height="235" loading="lazy" class="w-full rounded-lg shadow" />
-  </div>
-</section>
+  <main>
 
-<!-- Booking Info -->
-<section class="py-12 bg-brand-bg">
-  <div class="max-w-4xl mx-auto px-4">
-    <div class="grid md:grid-cols-3 gap-6 mb-10">
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="text-3xl mb-3">✅</div>
-        <h3 class="font-extrabold text-ink mb-2">No Payment Upfront</h3>
-        <p class="text-ink-soft text-sm">Your first lesson booking is free to make. Payment is handled directly with your instructor.</p>
+    <!-- Page hero -->
+    <section class="bg-[var(--color-brand-accent-deep)] text-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-3 py-1 rounded-full mb-5">
+          📅 Book Online 24/7
+        </div>
+        <h1 class="font-display font-extrabold text-white mb-4">Prices &amp; Book Now</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">Actually book your first driving lesson here — no payment required. Subsequent lessons and payments are arranged with your instructor.</p>
       </div>
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="text-3xl mb-3">🕐</div>
-        <h3 class="font-extrabold text-ink mb-2">Book Any Time</h3>
-        <p class="text-ink-soft text-sm">Our online booking system is available 24 hours a day, 7 days a week. Pick a time that suits you.</p>
-      </div>
-      <div class="bg-white rounded-xl border border-border p-6 text-center shadow-sm">
-        <div class="text-3xl mb-3">📱</div>
-        <h3 class="font-extrabold text-ink mb-2">Text Confirmation</h3>
-        <p class="text-ink-soft text-sm">You'll receive a free text reminder before your lesson so you never miss your slot.</p>
-      </div>
-    </div>
+    </section>
 
-    <!-- Booking Iframe -->
-    <div class="bg-white rounded-xl border border-border shadow-sm overflow-hidden">
-      <div class="bg-brand-accent px-6 py-4">
-        <h2 class="font-extrabold text-white">Book Your First Lesson</h2>
-        <p class="text-white/80 text-sm mt-1">Select your preferred date and time below</p>
+    <!-- How to pay -->
+    <section class="py-16 px-6 bg-[var(--color-accent-light)] border-b border-[var(--color-border)]">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div>
+            <div class="text-3xl mb-2">💳</div>
+            <p class="font-semibold text-[var(--color-ink)]">Pay by Cash, Cheque or Card</p>
+            <p class="text-[var(--color-ink-soft)] text-sm mt-1">Payment is made to your instructor at the start of each lesson.</p>
+          </div>
+          <div>
+            <div class="text-3xl mb-2">📦</div>
+            <p class="font-semibold text-[var(--color-ink)]">Block Booking Available</p>
+            <p class="text-[var(--color-ink-soft)] text-sm mt-1">Block bookings must be paid in full on the first lesson and are valid for 6 months.</p>
+          </div>
+          <div>
+            <div class="text-3xl mb-2">🌐</div>
+            <p class="font-semibold text-[var(--color-ink)]">No Payment to Book</p>
+            <p class="text-[var(--color-ink-soft)] text-sm mt-1">Your first lesson booking is free to make online. No card details needed up front.</p>
+          </div>
+        </div>
       </div>
-      <div class="p-4">
-        <iframe
-          src="https://app.drivinginstructorservices.com/plugins/responsive/Booking.fwx?account=8013014400093"
-          width="100%"
-          height="600"
-          loading="lazy"
-          title="Book a driving lesson"
-          class="border-0 rounded"
-        ></iframe>
+    </section>
+
+    <!-- Online booking -->
+    <section class="py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Book Your First Lesson Online</h2>
+          <p class="text-[var(--color-ink-soft)] text-lg">Use the booking system below to select your preferred day and time. No payment is taken at this stage.</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl overflow-hidden shadow-sm" style="min-height:400px;">
+          <iframe
+            src="https://app.drivinginstructorservices.com/plugins/responsive/Booking.fwx?account=8013014400093"
+            width="100%"
+            height="600"
+            frameborder="0"
+            title="Online booking system"
+            loading="lazy"
+            class="w-full block"
+          ></iframe>
+        </div>
+        <p class="text-center text-[var(--color-ink-soft)] text-sm mt-4">Having trouble booking? <a href="tel:01792870718" class="text-[var(--color-brand-accent)] font-semibold hover:underline">Call 01792 870718</a> and I will get you booked in.</p>
+      </div>
+    </section>
+
+    <!-- Or contact form -->
+    <section class="bg-[var(--color-cream)] py-20 px-6">
+      <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-3">Or Send Me a Message</h2>
+          <p class="text-[var(--color-ink-soft)]">Prefer to get in touch directly? Fill in the form and I will respond as soon as possible.</p>
+        </div>
+        <form action="/api/contact" method="POST" class="bg-white rounded-xl border border-[var(--color-border)] p-8 shadow-sm space-y-5" style="position:relative;">
+          <input type="hidden" name="_site_id" value="D1919" />
+          <input type="hidden" name="_business_name" value="Iwan Williams Driving School" />
+          <input type="hidden" name="_business_email" value="" />
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off" /></div>
+          <div>
+            <label for="name" class="block text-sm font-semibold text-[var(--color-ink)] mb-1">Your Name</label>
+            <input type="text" id="name" name="name" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)]" placeholder="e.g. Sarah Jones" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-semibold text-[var(--color-ink)] mb-1">Email Address</label>
+            <input type="email" id="email" name="email" required class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)]" placeholder="sarah@example.com" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-semibold text-[var(--color-ink)] mb-1">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)]" placeholder="07700 900000" />
+          </div>
+          <div>
+            <label for="service" class="block text-sm font-semibold text-[var(--color-ink)] mb-1">Type of Lesson</label>
+            <select id="service" name="service" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)]">
+              <option value="">Select an option</option>
+              <option value="Manual Driving Lessons">Manual Driving Lessons</option>
+              <option value="Automatic Driving Lessons">Automatic Driving Lessons</option>
+              <option value="Intensive Course">Intensive Course</option>
+              <option value="Pass Plus">Pass Plus</option>
+              <option value="Refresher Lessons">Refresher Lessons</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-[var(--color-ink)] mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full border border-[var(--color-border)] rounded-lg px-4 py-2.5 text-sm text-[var(--color-ink)] bg-[var(--color-brand-bg)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)]" placeholder="Tell me your preferred days and times, your current experience level, and any questions you have."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[var(--color-brand-accent)] text-white font-bold py-3 rounded-lg hover:bg-[var(--color-brand-accent-deep)] transition-colors">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact info -->
+    <section class="py-16 px-6 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display font-extrabold text-[var(--color-ink)] mb-6">Contact Me Directly</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="tel:01792870718" class="flex items-center gap-3 bg-white border border-[var(--color-border)] rounded-xl px-6 py-4 hover:shadow-md transition-shadow">
+            <span class="text-2xl">📞</span>
+            <div class="text-left">
+              <p class="text-xs text-[var(--color-ink-soft)] uppercase tracking-wide font-semibold">Local line</p>
+              <p class="font-display font-bold text-[var(--color-ink)]">01792 870718</p>
+            </div>
+          </a>
+          <a href="tel:03300500217" class="flex items-center gap-3 bg-white border border-[var(--color-border)] rounded-xl px-6 py-4 hover:shadow-md transition-shadow">
+            <span class="text-2xl">📞</span>
+            <div class="text-left">
+              <p class="text-xs text-[var(--color-ink-soft)] uppercase tracking-wide font-semibold">National line</p>
+              <p class="font-display font-bold text-[var(--color-ink)]">03300 500 217</p>
+            </div>
+          </a>
+        </div>
+        <p class="text-[var(--color-ink-soft)] text-sm mt-6">See our <a href="/D1919/index-php-ts-cs" class="text-[var(--color-brand-accent)] font-semibold hover:underline">Terms &amp; Conditions</a> for cancellation and payment policies.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-ink)] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <p class="font-display font-extrabold text-xl mb-1">Iwan Williams Driving School</p>
+        <p class="text-white/70 text-sm mb-4">The premier driving school for Swansea, Llanelli &amp; Neath Port Talbot.</p>
+        <address class="not-italic text-white/70 text-sm space-y-1">
+          <p>4 Hengoed Rd, Hengoed</p>
+          <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
+          <p><a href="tel:01792870718" class="hover:text-white transition-colors">01792 870718</a></p>
+          <p><a href="tel:03300500217" class="hover:text-white transition-colors">03300 500 217</a></p>
+        </address>
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.facebook.com/iwanwilliamsdriving" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Facebook</a>
+          <a href="https://twitter.com/IwanWilliamsSOM" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">Twitter</a>
+          <a href="https://youtube.com/@iwandrivingschool" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">YouTube</a>
+          <a href="https://www.tiktok.com/@iwanwilliams6" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors text-sm">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Lessons</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-white transition-colors">Automatic Lessons</a></li>
+          <li><a href="/D1919/index-php-book-now" class="hover:text-white transition-colors">Prices &amp; Book Now</a></li>
+          <li><a href="/D1919/index-php-ts-cs" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white/90 mb-3 text-sm uppercase tracking-wide">Instructors</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-white transition-colors">Instructor Training</a></li>
+          <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-white transition-colors">Become an Instructor</a></li>
+          <li><a href="/D1919/index-php-join-the-team" class="hover:text-white transition-colors">Join the Team</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+    <div class="max-w-6xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-xs">
+      &copy; 2025 Iwan Williams Driving School. All rights reserved.
+    </div>
+  </footer>
 
-<!-- Or call us -->
-<section class="py-12 bg-white">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-extrabold text-ink mb-4">Prefer to Call?</h2>
-    <p class="text-ink-soft mb-6">Give me a ring and I'll get you booked in straight away.</p>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="tel:03300500217" class="bg-brand-accent text-white font-bold px-8 py-3 rounded-full hover:bg-brand-accent-deep transition-colors">📞 03300 500 217</a>
-      <a href="tel:01792870718" class="border-2 border-brand-accent text-brand-accent font-bold px-8 py-3 rounded-full hover:bg-accent-light transition-colors">📞 01792 870718</a>
-    </div>
-    <p class="text-ink-soft text-sm mt-6">Serving Swansea, Llanelli and Neath Port Talbot</p>
-  </div>
-</section>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  </script>
 
-<!-- Footer -->
-<footer class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div>
-      <div class="font-display font-extrabold text-xl text-brand-accent mb-2">Iwan Williams</div>
-      <div class="text-white/70 text-sm mb-4">Driving School</div>
-      <address class="not-italic text-white/70 text-sm space-y-1">
-        <p>4 Hengoed Rd, Hengoed</p>
-        <p>Swansea, Llanelli &amp; Neath Port Talbot</p>
-        <p><a href="tel:03300500217" class="hover:text-brand-accent transition-colors">03300 500 217</a></p>
-        <p><a href="tel:01792870718" class="hover:text-brand-accent transition-colors">01792 870718</a></p>
-      </address>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">Navigation</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919" class="hover:text-brand-accent transition-colors">Home</a></li>
-        <li><a href="/D1919/index-php-book-now" class="hover:text-brand-accent transition-colors">Prices &amp; Book Now</a></li>
-        <li><a href="/D1919/index-php-automatic-driving-lessons" class="hover:text-brand-accent transition-colors">Automatic Lessons</a></li>
-        <li><a href="/D1919/index-php-driving-instructor-training" class="hover:text-brand-accent transition-colors">Instructor Training</a></li>
-        <li><a href="/D1919/index-php-join-the-team" class="hover:text-brand-accent transition-colors">Join the Team</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-display font-bold text-white mb-4">More</h4>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1919/index-php-become-a-driving-instructor" class="hover:text-brand-accent transition-colors">Become a Driving Instructor</a></li>
-        <li><a href="/D1919/index-php-ts-cs" class="hover:text-brand-accent transition-colors">T's &amp; C's</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10 py-4 text-center text-xs text-white/40">
-    &copy; 2026 Iwan Williams Driving School. All rights reserved.
-  </div>
-</footer>
-
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-</script>
 </body>
 </html>
